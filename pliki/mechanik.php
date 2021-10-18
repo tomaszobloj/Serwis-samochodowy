@@ -1,4 +1,4 @@
-<form action="mechanik_dane.php" method="POST">
+<form action="index.php?modul=mechanik_dane" method="POST">
   <fieldset>
     <legend>Dane mechanika:</legend>
     <label for="imie">Imię:</label>

@@ -1,4 +1,4 @@
-<form action="klient_dane.php" method="POST">
+<form action="index.php?modul=klient_dane" method="POST">
   <fieldset>
     <legend>Dane klienta:</legend>
     <label for="imie">Imię:</label>

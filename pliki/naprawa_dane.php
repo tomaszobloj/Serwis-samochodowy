@@ -1,10 +1,13 @@
 <?php
-include 'header.php';
-
 $data = $_POST['data'];
 $kwota = $_POST['kwota'];
 
-echo $data, $kwota;
+echo "Data naprawy: ".$data."<br/>";
+echo "Kwota: ".$kwota."<br/>";
 
-include 'footer.php';
+$query = "INSERT INTO `naprawa`(`data_naprawy`, `kwota`) VALUES ('".$data."','".$kwota."')";
+
+if(mysqli_query($connect, $query)){
+    echo "Dodano naprawę<br/>";
+}
 ?>

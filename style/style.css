@@ -39,7 +39,7 @@ li a:hover:not(.active) {
   background-color: #ff6700;
 }
 section {
-  height: 500px;
+  height: 60vh;
   background-color: #3a6ea5;
 }
 footer {

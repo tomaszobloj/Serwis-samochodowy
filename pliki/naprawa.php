@@ -1,4 +1,4 @@
-<form action="naprawa_dane.php" method="POST">
+<form action="index.php?modul=naprawa_dane" method="POST">
   <fieldset>
     <legend>Dane naprawy:</legend>
     <label for="data">Data naprawy:</label>
