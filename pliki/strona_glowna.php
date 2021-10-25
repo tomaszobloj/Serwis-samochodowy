@@ -1,1 +1,1 @@
-TAK
+<p>Witaj na stronie serwisu samochodowego u Zbycha!</p>
