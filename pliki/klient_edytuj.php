@@ -6,7 +6,7 @@ if(isset($_GET['aktualizuj'])){
     $adres = $_POST['adres'];
     $aktualizuj = $_GET['aktualizuj'];
 
-    echo "Zmienione dane: <br/>";
+    echo "Zmienione dane klienta: <br/>";
     echo "Imię: ".$imie."<br/>";
     echo "Nazwisko: ".$nazwisko."<br/>";
     echo "Telefon: ".$telefon."<br/>";
@@ -17,7 +17,7 @@ if(isset($_GET['aktualizuj'])){
     if(mysqli_query($connect, $query)){
         echo "Baza została zaaktualizowana!";
     } else {
-        echo "Błąd";
+        echo "Błąd! Prosimy o kontakt z administracją!";
     }
 }
 
