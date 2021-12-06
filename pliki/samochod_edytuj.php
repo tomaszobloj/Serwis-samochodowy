@@ -31,13 +31,13 @@ if(isset($_GET['id'])){
   <fieldset>
     <legend>Dane samochodu:</legend>
     <label for="marka">Marka:</label>
-    <input type="text" name="marka" value="<?php echo $rekord['marka'];?>"><br>
+    <input type="text" name="marka" value="<?php echo $rekord['marka'];?>"><br/>
     <label>Model:</label>
-    <input type="text" name="model" value="<?php echo $rekord['model'];?>"><br>
+    <input type="text" name="model" value="<?php echo $rekord['model'];?>"><br/>
     <label>Rocznik:</label>
-    <input type="number" name="rocznik" value="<?php echo $rekord['rocznik'];?>"><br>
+    <input type="number" name="rocznik" value="<?php echo $rekord['rocznik'];?>"><br/>
     <label>Przebieg:</label>
-    <input type="number" name="przebieg" value="<?php echo $rekord['przebieg'];?>"><br>
+    <input type="number" name="przebieg" value="<?php echo $rekord['przebieg'];?>"><br/>
     <input type="hidden" name="aktualizuj" value="<?php echo $rekord['id'];?>">
     <input type="submit" value="Wyślij">
   </fieldset>

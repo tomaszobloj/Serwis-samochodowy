@@ -30,11 +30,11 @@ if(isset($_GET['id'])){
   <fieldset>
     <legend>Dane części:</legend>
     <label for="nazwa">Nazwa:</label>
-    <input type="text" name="nazwa" value="<?php echo $rekord['nazwa'];?>"><br>
+    <input type="text" name="nazwa" value="<?php echo $rekord['nazwa'];?>"><br/>
     <label>Cena:</label>
-    <input type="number" step="0.01" name="cena" value="<?php echo $rekord['cena'];?>"><br>
+    <input type="number" step="0.01" name="cena" value="<?php echo $rekord['cena'];?>"><br/>
     <label>Stan magazynowy:</label>
-    <input type="number" name="stan" value="<?php echo $rekord['stan_magazynowy'];?>"><br>
+    <input type="number" name="stan" value="<?php echo $rekord['stan_magazynowy'];?>"><br/>
     <input type="hidden" name="aktualizuj" value="<?php echo $rekord['id'];?>">
     <input type="submit" value="Wyślij">
   </fieldset>

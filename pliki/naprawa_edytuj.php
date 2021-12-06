@@ -27,9 +27,9 @@ if(isset($_GET['id'])){
   <fieldset>
     <legend>Dane naprawy:</legend>
     <label for="data">Data naprawy:</label>
-    <input type="date" name="data" value="<?php echo $rekord['data_naprawy'];?>"><br>
+    <input type="date" name="data" value="<?php echo $rekord['data_naprawy'];?>"><br/>
     <label>Kwota:</label>
-    <input type="number" name="kwota" value="<?php echo $rekord['kwota'];?>"><br>
+    <input type="number" name="kwota" value="<?php echo $rekord['kwota'];?>"><br/>
     <input type="hidden" name="aktualizuj" value="<?php echo $rekord['id'];?>">
     <input type="submit" value="Wyślij">
   </fieldset>

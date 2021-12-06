@@ -29,11 +29,11 @@ if(isset($_GET['id'])){
   <fieldset>
     <legend>Edytuj dane mechanika:</legend>
     <label for="imie">Imię:</label>
-    <input type="text" name="imie" value="<?php echo $rekord['imie'];?>"><br>
+    <input type="text" name="imie" value="<?php echo $rekord['imie'];?>"><br/>
     <label>Nazwisko:</label>
-    <input type="text" name="nazwisko" value="<?php echo $rekord['nazwisko'];?>"><br>
+    <input type="text" name="nazwisko" value="<?php echo $rekord['nazwisko'];?>"><br/>
     <label>Telefon:</label>
-    <input type="number" name="telefon" value="<?php echo $rekord['telefon'];?>"><br>
+    <input type="number" name="telefon" value="<?php echo $rekord['telefon'];?>"><br/>
     <input type="hidden" name="aktualizuj" value="<?php echo $rekord['id'];?>">
     <input type="submit" value="Wyślij">
   </fieldset>
