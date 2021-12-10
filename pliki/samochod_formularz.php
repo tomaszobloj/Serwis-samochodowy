@@ -3,7 +3,7 @@
     <legend>Dane samochodu:</legend>
       <label for="id_klient">Klient:</label><br>
       <?php
-        function lista($dane, $name){
+        function wybierzKlienta($dane, $name){
           echo "<select name='".$name."'>";
           while($rekord = mysqli_fetch_assoc($dane)){
             echo "<option value='".$rekord['id']."'>".$rekord['nazwisko']."</option>";
@@ -14,7 +14,7 @@
         $query = "SELECT * FROM `klient`";
         $rezultat = mysqli_query($connect, $query);
         
-        lista($rezultat, "id_klient");
+        wybierzKlienta($rezultat, "id_klient");
       ?>
       <label for="marka">Marka:</label>
       <input type="text" name="marka"><br>

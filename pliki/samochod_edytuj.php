@@ -8,7 +8,7 @@ if(isset($_GET['aktualizuj'])){
     $aktualizuj = $_GET['aktualizuj'];
 
     echo "Zmienione dane samochodu: <br/>";
-    echo "Klient :".$id_klient."<br/>";
+    echo "Klient: ".$id_klient."<br/>";
     echo "Marka samochodu: ".$marka."<br/>";
     echo "Model: ".$model."<br/>";
     echo "Rocznik: ".$rocznik."<br/>";
@@ -34,7 +34,7 @@ if(isset($_GET['id'])){
     <legend>Dane samochodu:</legend>
       <label for="id_klient">Klient:</label><br>
       <?php
-        function lista($dane, $name){
+        function edytujKlienta($dane, $name){
           echo "<select name='".$name."'>";
           while($rekord = mysqli_fetch_assoc($dane)){
             echo "<option value='".$rekord['id']."'>".$rekord['nazwisko']."</option>";
@@ -45,7 +45,7 @@ if(isset($_GET['id'])){
         $query = "SELECT * FROM `klient`";
         $rezultat = mysqli_query($connect, $query);
         
-        lista($rezultat, "id_klient");
+        edytujKlienta($rezultat, "id_klient");
       ?>
       <label for="marka">Marka:</label>
       <input type="text" name="marka" value="<?php echo $rekord['marka'];?>"><br/>

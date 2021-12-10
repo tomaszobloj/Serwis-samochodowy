@@ -5,7 +5,7 @@ $model = $_POST['model'];
 $rocznik = $_POST['rocznik'];
 $przebieg = $_POST['przebieg'];
 
-echo "Klient :".$id_klient."<br/>";
+echo "Klient: ".$id_klient."<br/>";
 echo "Marka samochodu: ".$marka."<br/>";
 echo "Model: ".$model."<br/>";
 echo "Rocznik: ".$rocznik."<br/>";
