@@ -1,7 +1,7 @@
 <form action="index.php?modul=samochod_dane" method="POST">
   <fieldset>
     <legend>Dane samochodu:</legend>
-      <label for="klient">Klient:</label><br>
+      <label for="id_klient">Klient:</label><br>
       <?php
         function lista($dane, $name){
           echo "<select name='".$name."'>";
