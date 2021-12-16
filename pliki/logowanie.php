@@ -1,4 +1,4 @@
-<form action="index.php">
+<form action="index.php" method="post">
     Login:<br/>
     <input type="text" name="login"><br/>
     Hasło:<br/>
