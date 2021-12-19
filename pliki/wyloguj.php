@@ -1,5 +1,5 @@
 <?php
 session_destroy();
-include('logowanie.php');
+header('location: index.php');
 exit;
 ?>
