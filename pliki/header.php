@@ -18,7 +18,7 @@
         <li><a href="index.php?modul=naprawa">Naprawa</a></li>
         <li><a href="index.php?modul=czesci">Części</a></li>
         <li><a href="index.php?modul=mechanik">Mechanicy</a></li>
-        <li><a href="index.php">Wyloguj</a></li>
+        <li><a href="index.php?modul=wyloguj">Wyloguj</a></li>
       </ul>
     </nav>
     <section>

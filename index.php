@@ -1,5 +1,5 @@
 <?php 
-  //include('pliki/autoryzacja.php');
+  include('pliki/autoryzacja.php');
   include('pliki/data_base_connect.php');
   include('pliki/header.php');
 
