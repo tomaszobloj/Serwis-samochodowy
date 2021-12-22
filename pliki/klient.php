@@ -32,7 +32,7 @@ $wyszukajImie = '';
 $wyszukajNazwisko = '';
 $wyszukajTelefon = '';
 $wyszukajAdres = '';
-$tabela = "<table><tr><th>Id</th><th>Imie</th><th>Nazwisko</th><th>Telefon</th><th>Adres</th><th></th><th></th></tr>";
+$tabela = "<table><tr><th>Id</th><th>Imie</th><th>Nazwisko</th><th>Telefon</th><th>Adres</th></tr>";
 $tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="imie" value="'.$wyszukajImie.'"></td><td><input type="text" name="nazwisko" value="'.$wyszukajNazwisko.'"></td><td><input type="text" name="telefon" value="'.$wyszukajTelefon.'"></td><td><input type="text" name="adres" value="'.$wyszukajAdres.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
 $query = "SELECT * FROM `klient` WHERE 1=1";
 
