@@ -10,7 +10,7 @@ if(isset($_GET['usun'])){
 $wyszukajDataNaprawy = '';
 $wyszukajKwota = '';
 $tabela = "<table><tr><th>Id</th><th>Data naprawy</th><th>Kwota</th></tr>";
-$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="date" name="data_naprawy" value="'.$wyszukajDataNaprawy.'"></td><td><input type="text" name="kwota" value="'.$wyszukajKwota.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="date" name="data_naprawy" value="'.$wyszukajDataNaprawy.'"></td><td><input type="number" name="kwota" value="'.$wyszukajKwota.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
 $query = "SELECT * FROM `naprawa` WHERE 1=1";
 
 if(isset($_POST['data_naprawy'])){

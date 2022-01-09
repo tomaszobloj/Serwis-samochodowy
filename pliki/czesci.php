@@ -11,7 +11,7 @@ $wyszukajNazwa = '';
 $wyszukajCena = '';
 $wyszukajStan = '';
 $tabela = "<table><tr><th>Id</th><th>Nazwa</th><th>Cena</th><th>Stan</th></tr>";
-$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="nazwa" value="'.$wyszukajNazwa.'"></td><td><input type="text" name="cena" value="'.$wyszukajCena.'"></td><td><input type="text" name="stan_magazynowy" value="'.$wyszukajStan.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="nazwa" value="'.$wyszukajNazwa.'"></td><td><input type="number" name="cena" value="'.$wyszukajCena.'"></td><td><input type="number" name="stan_magazynowy" value="'.$wyszukajStan.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
 $query = "SELECT * FROM `czesc` WHERE 1=1";
 
 if(isset($_POST['nazwa'])){

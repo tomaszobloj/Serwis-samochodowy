@@ -11,7 +11,7 @@ $wyszukajImie = '';
 $wyszukajNazwisko = '';
 $wyszukajTelefon = '';
 $tabela = "<table><tr><th>Id</th><th>Imie</th><th>Nazwisko</th><th>Telefon</th></tr>";
-$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="imie" value="'.$wyszukajImie.'"></td><td><input type="text" name="nazwisko" value="'.$wyszukajNazwisko.'"></td><td><input type="text" name="telefon" value="'.$wyszukajTelefon.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="imie" value="'.$wyszukajImie.'"></td><td><input type="text" name="nazwisko" value="'.$wyszukajNazwisko.'"></td><td><input type="number" name="telefon" value="'.$wyszukajTelefon.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
 $query = "SELECT * FROM `mechanik` WHERE 1=1";
 
 if(isset($_POST['imie'])){

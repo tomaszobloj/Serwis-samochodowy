@@ -12,7 +12,7 @@ $wyszukajModel = '';
 $wyszukajRocznik = '';
 $wyszukajPrzebieg = '';
 $tabela = "<table><tr><th>Id</th><th>Marka</th><th>Model</th><th>Rocznik</th><th>Przebieg</th></tr>";
-$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="marka" value="'.$wyszukajMarka.'"></td><td><input type="text" name="model" value="'.$wyszukajModel.'"></td><td><input type="text" name="rocznik" value="'.$wyszukajRocznik.'"></td><td><input type="text" name="przebieg" value="'.$wyszukajPrzebieg.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="marka" value="'.$wyszukajMarka.'"></td><td><input type="text" name="model" value="'.$wyszukajModel.'"></td><td><input type="number" name="rocznik" value="'.$wyszukajRocznik.'"></td><td><input type="number" name="przebieg" value="'.$wyszukajPrzebieg.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
 $query = "SELECT * FROM `samochod` WHERE 1=1";
 
 if(isset($_POST['marka'])){
