@@ -7,8 +7,22 @@ if(isset($_GET['usun'])){
     }
 }
 
-$tabela = "<table><tr><th>Id</th><th>Data naprawy</th><th>Kwota</th><th>Edytuj</th><th>Usuń</th></tr>";
-$query = "SELECT * FROM `naprawa`";
+$wyszukajDataNaprawy = '';
+$wyszukajKwota = '';
+$tabela = "<table><tr><th>Id</th><th>Data naprawy</th><th>Kwota</th></tr>";
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="date" name="data_naprawy" value="'.$wyszukajDataNaprawy.'"></td><td><input type="text" name="kwota" value="'.$wyszukajKwota.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$query = "SELECT * FROM `naprawa` WHERE 1=1";
+
+if(isset($_POST['data_naprawy'])){
+	$query .= ' AND data_naprawy LIKE "%'.$_POST['data_naprawy'].'%"';
+	$wyszukajDataNaprawy = $_POST['data_naprawy'];
+}
+
+if(isset($_POST['kwota'])){
+	$query .= ' AND kwota LIKE "%'.$_POST['kwota'].'%"';
+	$wyszukajKwota = $_POST['kwota'];
+}
+
 $rezultat = mysqli_query($connect, $query);
 
 while ($rekord = mysqli_fetch_assoc($rezultat)){
