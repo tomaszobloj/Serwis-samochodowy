@@ -7,8 +7,28 @@ if(isset($_GET['usun'])){
     }
 }
 
-$tabela = "<table><tr><th>Id</th><th>Imie</th><th>Nazwisko</th><th>Telefon</th><th>Edytuj</th><th>Usuń</th></tr></tr>";
-$query = "SELECT * FROM `mechanik`";
+$wyszukajImie = '';
+$wyszukajNazwisko = '';
+$wyszukajTelefon = '';
+$tabela = "<table><tr><th>Id</th><th>Imie</th><th>Nazwisko</th><th>Telefon</th></tr>";
+$tabela .= '<tr><td>Wyszukaj</td><td><form action="" method="post"><input type="text" name="imie" value="'.$wyszukajImie.'"></td><td><input type="text" name="nazwisko" value="'.$wyszukajNazwisko.'"></td><td><input type="text" name="telefon" value="'.$wyszukajTelefon.'"></td><td colspan="2"><input type="submit" value="Szukaj"></td></tr>';
+$query = "SELECT * FROM `mechanik` WHERE 1=1";
+
+if(isset($_POST['imie'])){
+	$query .= ' AND imie LIKE "%'.$_POST['imie'].'%"';
+	$wyszukajImie = $_POST['imie'];
+}
+
+if(isset($_POST['nazwisko'])){
+	$query .= ' AND nazwisko LIKE "%'.$_POST['nazwisko'].'%"';
+	$wyszukajNazwisko = $_POST['nazwisko'];
+}
+
+if(isset($_POST['telefon'])){
+	$query .= ' AND telefon LIKE "%'.$_POST['telefon'].'%"';
+	$wyszukajTelefon = $_POST['telefon'];
+}
+
 $rezultat = mysqli_query($connect, $query);
 
 while ($rekord = mysqli_fetch_assoc($rezultat)){
