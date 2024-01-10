@@ -43,7 +43,7 @@ INSERT INTO `czesc` (`id`, `nazwa`, `cena`, `stan_magazynowy`) VALUES
 (2, 'Uszczelka', 2.5, 10),
 (3, 'Opona', 200, 20),
 (4, 'Płyn chłodniczy', 49.99, 2),
-(5, 'Dadio', 499.49, 5);
+(5, 'Radio', 499.49, 5);
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE `klient` (
 --
 
 INSERT INTO `klient` (`id`, `imie`, `nazwisko`, `telefon`, `adres`) VALUES
-(1, 'Tomasz', 'Obłój', 570299200, 'Kraków'),
+(1, 'Tomasz', 'Obłój', 573299710, 'Kraków'),
 (2, 'Jan', 'Kowalski', 500400100, 'Sosnowiec '),
 (3, 'Marek', 'Nowak', 300123123, 'Stokowa'),
 (4, 'Krystian', 'Konik', 694201234, 'Zadupie 42'),
@@ -73,7 +73,7 @@ INSERT INTO `klient` (`id`, `imie`, `nazwisko`, `telefon`, `adres`) VALUES
 (7, 'Jakub', 'Kupkowski', 2147483647, 'Budowlana'),
 (8, 'Artur', 'Arturowski', 777555444, 'św. Artura'),
 (9, 'Bernardyna', 'Kłyś', 555233211, 'Leśna 18'),
-(10, 'Julka', 'HEHKrycha', 213412312, 'Katowice');
+(10, 'Julka', 'Krzywoñ', 213412312, 'Katowice');
 
 -- --------------------------------------------------------
 
@@ -97,7 +97,7 @@ INSERT INTO `mechanik` (`id`, `imie`, `nazwisko`, `telefon`) VALUES
 (2, 'Krystian', 'Kłyś', 560231223),
 (3, 'Artur', 'Musiał', 554123123),
 (4, 'Paweł', 'Niepecl', 692313123),
-(5, 'Krzysztof', 'Kustosz', 123123412);
+(5, 'Krystian', 'Konik', 123123412);
 
 -- --------------------------------------------------------
 
