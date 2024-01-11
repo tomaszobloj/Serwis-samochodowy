@@ -86,13 +86,23 @@ INSERT INTO `klient` (`id`, `imie`, `nazwisko`, `telefon`, `adres`) VALUES
 (1, 'Tomasz', 'Obłój', 573299710, 'Kraków'),
 (2, 'Jan', 'Kowalski', 500400100, 'Sosnowiec '),
 (3, 'Marek', 'Nowak', 300123123, 'Stokowa'),
-(4, 'Krystian', 'Konik', 694201234, 'Zadupie 42'),
+(4, 'Krystian', 'Konik', 784645527, 'Zadupie 42'),
 (5, 'Krzysztof', 'Szarek', 333213213, 'Piwna 11'),
 (6, 'Damian', 'Suczkowski', 444123111, 'Warszawska'),
 (7, 'Jakub', 'Kupkowski', 2147483647, 'Budowlana'),
 (8, 'Artur', 'Arturowski', 777555444, 'św. Artura'),
 (9, 'Bernardyna', 'Kłyś', 555233211, 'Leśna 18'),
-(10, 'Julka', 'Krzywoń', 213412312, 'Katowice');
+(10, 'Julka', 'Krzywoń', 213412312, 'Katowice'),
+(11, 'Weronika', 'Słupska', 573299710, 'Kraków'),
+(12, 'Gabriela', 'Twaróg', 694202123, 'Nowa Huta'),
+(13, 'Oskar', 'Skoczyk', 506353210, 'Młodziejowice'),
+(14, 'Iwona', 'Żurek', 514053003, 'Kraków'),
+(15, 'Kamil', 'Mamcarczyk', 567432123, 'Bronowice'),
+(16, 'Karol', 'Buch', 876231754, 'Miasteczko Studenckie AGH'),
+(17, 'Nikola', 'Karpińska', 543987098, 'Podlasie'),
+(18, 'Patryk', 'Rut', 567565987, 'Kraków'),
+(19, 'Mateusz', 'Oskołow', 658321865, 'Kraków'),
+(20, 'Mikołaj', 'Czaicki', 438765098, 'Browarowa');
 
 -- --------------------------------------------------------
 
@@ -112,11 +122,11 @@ CREATE TABLE `mechanik` (
 --
 
 INSERT INTO `mechanik` (`id`, `imie`, `nazwisko`, `telefon`) VALUES
-(1, 'Arek', 'Sala', 500288123),
-(2, 'Krystian', 'Kłyś', 560231223),
+(1, 'Arek', 'Sala', 533366575),
+(2, 'Krystian', 'Kłyś', 500878010),
 (3, 'Artur', 'Musiał', 554123123),
 (4, 'Paweł', 'Niepecl', 692313123),
-(5, 'Krystian', 'Konik', 123123412);
+(5, 'Kamil', 'Musiał', 123123412);
 
 -- --------------------------------------------------------
 
@@ -138,10 +148,10 @@ CREATE TABLE `naprawa` (
 
 INSERT INTO `naprawa` (`id`, `id_samochod`, `id_mechanik`, `data_naprawy`, `kwota`) VALUES
 (1, 1, 1, '2021-12-08', 309.99),
-(2, 5, 2, '2021-12-21', 69420),
-(3, 3, 1, '2021-12-01', 111111),
-(4, 2, 4, '2021-12-30', 12312300),
-(5, 4, 2, '2021-12-21', 2132110),
+(2, 5, 2, '2021-12-21', 690.99),
+(3, 3, 1, '2021-12-01', 5999.99),
+(4, 2, 4, '2021-12-30', 99.99),
+(5, 4, 2, '2021-12-21', 1199.99),
 (6, 10, 4, '2024-01-24', 1999.99),
 (7, 8, 3, '2024-01-31', 299.99),
 (8, 9, 2, '2024-01-29', 599.99),
