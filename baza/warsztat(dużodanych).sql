@@ -209,15 +209,15 @@ CREATE TABLE `samochod` (
 -- Zrzut danych tabeli `samochod`
 --
 
-INSERT INTO `samochod` (`id`, `id_kient`, `marka`, `model`, `rocznik`, `przebieg`) VALUES
+INSERT INTO `samochod` (`id`, `id_klient`, `marka`, `model`, `rocznik`, `przebieg`) VALUES
 (1, 1, 'Tesla', 'Model 3', 2018, 100600),
 (2, 2, 'Ford', 'Focus', 2010, 130650),
 (3, 6, 'Opel', 'Corsa', 2012, 2121345),
-(4, 5, 'Fiat', 'Panda', 2015, 110011),
+(4, 15, 'Fiat', 'Panda', 2015, 110011),
 (5, 7, 'Mercedes', 'GLC', 2010, 500123),
-(6, 3, 'Fiat', 'Uno', 1999, 301476),
+(6, 20, 'Fiat', 'Uno', 1999, 301476),
 (7, 4, 'Toyota', 'Tacoma', 1998, 469420),
-(8, 8, 'Ford', 'Mustang', 1969, 679123),
+(8, 11, 'Ford', 'Mustang', 1969, 679123),
 (9, 10, 'Subaru', 'Impreza', 1997, 490430),
 (10, 9, 'Volkswagen', 'Polo', 1999, 789125);
 
